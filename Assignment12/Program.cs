@@ -1,4 +1,7 @@
-﻿using System.Drawing;
+﻿using Microsoft.VisualBasic;
+using System.Drawing;
+using System.Linq.Expressions;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment12
@@ -103,6 +106,54 @@ namespace Assignment12
             //{
             //    Console.WriteLine(player.Key + " -> " + player.Value);
             //}
+            //Console.WriteLine();
+
+            #endregion
+
+            #region Exercise 3: Phone Book
+
+            //Create a Collection with 4 contacts(name → phone number)
+            //Dictionary<string, string> Contacts = new Dictionary<string, string>()
+            //{
+            //    { "Ahmed", "01012345678" }, { "Sara", "01123456789" }, { "Mona", "01234567890" }, { "Ali", "01512345678" }
+            //};
+
+            ////Add a new contact using [] syntax (add or update)
+            //Contacts["Mariam"] = "01095678244";
+
+            ////Try adding a duplicate using .Add() — catch the exception and print the error
+            //try
+            //{
+            //    Contacts.Add("Mariam", "01095678244");
+            //}
+            //catch(ArgumentException ex)
+            //{
+            //    Console.WriteLine("error occured due to dublication");
+            //}
+            //Console.WriteLine();
+
+            ////Try adding a duplicate using .TryAdd() — print whether it succeeded
+            //bool flag = Contacts.TryAdd("Mariam", "01095678244");
+            //Console.WriteLine($"Does adding a duplicate with these method succeded? {flag}");
+            //Console.WriteLine();
+
+            ////Search for a contact that doesn’t exist
+            //bool exist = Contacts.ContainsKey("Khaled");
+            //Console.WriteLine($"Does the Dictinary contains a member with a key = Khaled? {exist}");
+            //Console.WriteLine();
+
+            ////Get a contact with a fallback of "Not Found"
+            //string number;
+            //if (Contacts.TryGetValue("Khaled", out number))
+            //    Console.WriteLine($"Number of Khaled is: {number}");
+            //else
+            //    Console.WriteLine("Member you are searching for doesn't exist in contacts");
+            //Console.WriteLine();
+
+            ////Print all Keys on one line, then all Values on another line
+            //Console.WriteLine($"All Keys on one line: {string.Join(',', Contacts.Keys)}");
+            //Console.WriteLine();
+            //Console.WriteLine($"All Values on one line: {string.Join(',', Contacts.Values)}");
             //Console.WriteLine();
 
             #endregion
