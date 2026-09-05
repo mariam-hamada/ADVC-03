@@ -158,6 +158,69 @@ namespace Assignment12
 
             #endregion
 
+            #region Exercise 4: Unique Email Validator
+
+            ////Create a HashSet<string> with a case-insensitive comparer: new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            //HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            ////Add these emails: "ahmed@test.com", "AHMED@test.com", "sara@test.com", "Sara@Test.Com"
+            //emails.Add("ahmed@test.com");
+            //emails.Add("AHMED@test.com");
+            //emails.Add("sara@test.com");
+            //emails.Add("Sara@Test.Com");
+
+            ////Print Count — how many are actually stored? Explain why.
+            ////will print 2 , because we make it above case sensitive comparer
+            //Console.WriteLine("--- Emails ---"); 
+            //foreach (string email in emails)
+            //{
+            //    Console.WriteLine(email); 
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine($"Count: {emails.Count}");
+
+            ////Create two sets: Set A = { 1, 2, 3, 4, 5 } and Set B = { 4,5,6,7,8}
+            //HashSet<int> SetA = new() { 1, 2, 3, 4, 5 };
+            //HashSet<int> SetB = new() { 4, 5, 6, 7, 8 };
+
+            ////Print the result of: UnionWith, IntersectWith, ExceptWith
+            //HashSet<int> union = new HashSet<int>(SetA);
+            //union.UnionWith(SetB);
+
+            //Console.WriteLine("-- Union --");
+            //foreach (int item in union)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine();
+
+            //HashSet<int> intersect = new HashSet<int>(SetA);
+            //intersect.IntersectWith(SetB);
+
+            //Console.WriteLine("-- intersect --");
+            //foreach (int item in intersect)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine();
+
+            //HashSet<int> except = new HashSet<int>(SetA);
+            //except.ExceptWith(SetB);
+
+            //Console.WriteLine("-- Except --");
+            //foreach (int item in except)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine();
+
+            ////Use IsSubsetOf to check if { 1,2} is a subset of Set A
+            //HashSet<int> subset = new HashSet<int> { 1,2};
+            //bool check = subset.IsSubsetOf(SetA);
+            //Console.WriteLine($"Does the set {{1,2}} is a sub set of setA? {check}");
+
+            #endregion
+
         }
 
     }
