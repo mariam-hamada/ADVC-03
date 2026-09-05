@@ -59,6 +59,54 @@ namespace Assignment12
 
             #endregion
 
+            #region Exercise 2: Leaderboard
+
+            ////Create a leaderboard that automatically sorts players by score.
+            //SortedDictionary<int, string> Players = new SortedDictionary<int, string>();
+
+            ////Add: 500 = "Ahmed", 200 = "Sara", 800 = "Ali", 350 = "Mona"
+            //Players.Add(500, "Ahmed");
+            //Players.Add(200, "Sara");
+            //Players.Add(800, "Ali");
+            //Players.Add(350, "Mona");
+
+            ////Print all entries(they should be sorted by score automatically)
+            //Console.WriteLine("--- Our Dictionary ---");
+            //foreach (var player in Players)
+            //{
+            //    Console.WriteLine(player.Key + " -> " + player.Value); 
+            //}
+            //Console.WriteLine();
+
+            ////Access the first key and first value
+            //Console.WriteLine($"The First Key and Value is: {Players.First()}");
+            //Console.WriteLine();
+
+            ////Check if score 500 exists
+            //bool flag = Players.Any((player) => player.Key == 500);
+            //Console.WriteLine($"Is there is a player with score equals 500? {flag}");
+            //Console.WriteLine();
+
+            ////Safely get the player with score 999
+            //string PlayerName;
+            //if (Players.TryGetValue(999, out PlayerName))
+            //    Console.WriteLine(PlayerName);
+            //else
+            //    Console.WriteLine("Player with score 999 is not found");
+            //Console.WriteLine();
+
+
+            ////Remove the player with score 200 and print the updated list
+            //Players.Remove(200);
+            //Console.WriteLine("-- Dictionary after removing --");
+            //foreach (var player in Players)
+            //{
+            //    Console.WriteLine(player.Key + " -> " + player.Value);
+            //}
+            //Console.WriteLine();
+
+            #endregion
+
         }
 
     }
